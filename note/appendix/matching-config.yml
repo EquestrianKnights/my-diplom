@@ -1,0 +1,23 @@
+name-of-node: "USD/BTC"
+
+clickhouse:
+  connect: "tcp://localhost:9000?database=default&username=default&password=&write_timeout=5000"
+  table: "trades"
+
+logger:
+  file: "errors.log"
+  level: "info"
+
+mongo:
+  connect: "mongodb://localhost:27017/test?maxidletimems=100000&retrywrites=true&wtimeoutms=2000"
+  table: "orders"
+
+rabbitmq:
+  address: "amqp://guest:guest@localhost:5672"
+  queue: "hello"
+
+rpc:
+  address: "0.0.0.0:13131"
+  protocol: "tcp"
+
+redis-address: "localhost:6379"

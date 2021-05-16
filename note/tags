@@ -1,0 +1,190 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/9c285d38/
+Accesser	appendix/restore.go	/^	Accesser *MongoAccesser$/;"	m	struct:Restorer	typeref:typename:*MongoAccesser
+AnotherPrice	appendix/trade.go	/^	AnotherPrice    uint64    `db:"anotherprice"`$/;"	m	struct:models.Trade	typeref:typename:uint64
+BalanceAction	appendix/balance.proto	/^enum BalanceAction {$/;"	g
+BodyType	appendix/protobuf.proto	/^  enum BodyType {$/;"	g
+Cache	appendix/cache.go	/^type Cache struct {$/;"	s
+Car	appendix/protobuf.proto	/^message Car {$/;"	m
+Clickhouse	appendix/itester.go	/^	Clickhouse *wrappers.ClickhouseWrapper$/;"	m	struct:Tester	typeref:typename:*wrappers.ClickhouseWrapper
+DEPOSIT	appendix/balance.proto	/^  DEPOSIT = 1;$/;"	e
+DatabaseOrder	appendix/order.go	/^type DatabaseOrder struct {$/;"	s
+DepositData	appendix/balance.proto	/^message DepositData {$/;"	m
+FREEZING	appendix/balance.proto	/^  FREEZING = 3;$/;"	e
+FreezingData	appendix/balance.proto	/^message FreezingData {$/;"	m
+GetID	appendix/trade.go	/^func (trade Trade) GetID() int64 {$/;"	f	struct:models.Trade	typeref:typename:int64
+GetOrders	appendix/restore.go	/^func (r Restorer) GetOrders(isBuy bool) (openedOrders []models.Order, err error) {$/;"	f	struct:Restorer	typeref:typename:(openedOrders []models.Order, err error)
+Golang	sections/03_tools.tex	/^\\subsection{Golang}$/;"	u	section:Используемые инструменты и технологии
+ID	appendix/order.go	/^	ID           int64  `bson:"_id"`           \/\/ order id$/;"	m	struct:DatabaseOrder	typeref:typename:int64
+ID	appendix/order.go	/^	ID           int64  `bson:"_id"`           \/\/ order id$/;"	m	struct:Order	typeref:typename:int64
+ID	appendix/trade.go	/^	ID              int64     `db:"id"`$/;"	m	struct:models.Trade	typeref:typename:int64
+InitialValue	appendix/order.go	/^	InitialValue string `bson:"initial_value"` \/\/ used to store initial value of order$/;"	m	struct:DatabaseOrder	typeref:typename:string
+InitialValue	appendix/order.go	/^	InitialValue uint64 `bson:"initial_value"` \/\/ used to store initial value of order$/;"	m	struct:Order	typeref:typename:uint64
+Initialize	appendix/cache.go	/^func (cache *Cache) Initialize() {$/;"	f	struct:Cache
+Initialize	appendix/container.go	/^func (container *OrderContainer) Initialize(comparator utils.Comparator) {$/;"	f	struct:OrderContainer
+IsClosed	appendix/order.go	/^	IsClosed     bool   `bson:"is_closed"`     \/\/ if true, then the order is closed$/;"	m	struct:DatabaseOrder	typeref:typename:bool
+IsClosed	appendix/order.go	/^	IsClosed     bool   `bson:"is_closed"`     \/\/ if true, then the order is closed$/;"	m	struct:Order	typeref:typename:bool
+IsPurchase	appendix/order.go	/^	IsPurchase   bool   `bson:"is_purchase"`   \/\/ if true, then Value is for purchasing$/;"	m	struct:DatabaseOrder	typeref:typename:bool
+IsPurchase	appendix/order.go	/^	IsPurchase   bool   `bson:"is_purchase"`   \/\/ if true, then Value is for purchasing$/;"	m	struct:Order	typeref:typename:bool
+Javadoc_Test	appendix/doxygen.cpp	/^class Javadoc_Test {$/;"	c	file:
+Mongo	appendix/itester.go	/^	Mongo      *wrappers.MongoWrapper$/;"	m	struct:Tester	typeref:typename:*wrappers.MongoWrapper
+Order	appendix/order.go	/^type Order struct {$/;"	s
+OrderContainer	appendix/container.go	/^type OrderContainer struct {$/;"	s
+OrderIDBuy	appendix/trade.go	/^	OrderIDBuy      int64     `db:"orderid_buy"`$/;"	m	struct:models.Trade	typeref:typename:int64
+OrderIDSell	appendix/trade.go	/^	OrderIDSell     int64     `db:"orderid_sell"`$/;"	m	struct:models.Trade	typeref:typename:int64
+Owner	appendix/protobuf.proto	/^  message Owner {$/;"	m
+Price	appendix/order.go	/^	Price        string `bson:"price"`         \/\/ price for value$/;"	m	struct:DatabaseOrder	typeref:typename:string
+Price	appendix/order.go	/^	Price        uint64 `bson:"price"`         \/\/ price for value$/;"	m	struct:Order	typeref:typename:uint64
+Price	appendix/trade.go	/^	Price           uint64    `db:"price"`$/;"	m	struct:models.Trade	typeref:typename:uint64
+PurchaseBenefit	appendix/trade.go	/^	PurchaseBenefit bool      `db:"purchasebenefit"`$/;"	m	struct:models.Trade	typeref:typename:bool
+Rabbit	appendix/itester.go	/^	Rabbit     *wrappers.RabbitWrapper$/;"	m	struct:Tester	typeref:typename:*wrappers.RabbitWrapper
+Redis	appendix/itester.go	/^	Redis      *wrappers.RedisWrapper$/;"	m	struct:Tester	typeref:typename:*wrappers.RedisWrapper
+Regex	appendix/itester.go	/^	Regex regexField$/;"	m	struct:Tester	typeref:typename:regexField
+Restorer	appendix/restore.go	/^type Restorer struct {$/;"	s
+SUV	appendix/protobuf.proto	/^    SUV = 2;$/;"	e
+SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
+TEnum	appendix/doxygen.cpp	/^    enum TEnum {$/;"	g	class:Javadoc_Test	file:
+TRANSFER	appendix/balance.proto	/^  TRANSFER = 5;$/;"	e
+TVal1	appendix/doxygen.cpp	/^        TVal1,   \/**< enum value TVal1. *\/$/;"	e	enum:Javadoc_Test::TEnum	file:
+TVal2	appendix/doxygen.cpp	/^        TVal2,   \/**< enum value TVal2. *\/$/;"	e	enum:Javadoc_Test::TEnum	file:
+TestFunc	appendix/itester.go	/^	TestFunc func(*Tester)$/;"	m	struct:Tester	typeref:typename:func(*Tester)
+TestName	appendix/itester.go	/^	TestName string$/;"	m	struct:Tester	typeref:typename:string
+Tester	appendix/itester.go	/^type Tester struct {$/;"	s
+Time	appendix/trade.go	/^	Time            time.Time `db:"time"`$/;"	m	struct:models.Trade	typeref:typename:time.Time
+Trade	appendix/trade.go	/^type Trade struct {$/;"	s	package:models
+TransferData	appendix/balance.proto	/^message TransferData {$/;"	m
+UNFREEZING	appendix/balance.proto	/^  UNFREEZING = 4;$/;"	e
+UNKNOWN	appendix/balance.proto	/^  UNKNOWN = 0;$/;"	e
+UnfreezingData	appendix/balance.proto	/^message UnfreezingData {$/;"	m
+UserID	appendix/order.go	/^	UserID       int64  `bson:"user_id"`       \/\/ user id$/;"	m	struct:DatabaseOrder	typeref:typename:int64
+UserID	appendix/order.go	/^	UserID       int64  `bson:"user_id"`       \/\/ user id$/;"	m	struct:Order	typeref:typename:int64
+UserIDBuy	appendix/trade.go	/^	UserIDBuy       int64     `db:"userid_buy"`$/;"	m	struct:models.Trade	typeref:typename:int64
+UserIDSell	appendix/trade.go	/^	UserIDSell      int64     `db:"userid_sell"`$/;"	m	struct:models.Trade	typeref:typename:int64
+Value	appendix/order.go	/^	Value        string `bson:"value"`         \/\/ to purchase if isPurchase is true, for sale if /;"	m	struct:DatabaseOrder	typeref:typename:string
+Value	appendix/order.go	/^	Value        uint64 `bson:"value"`         \/\/ to purchase if isPurchase is true, for sale if /;"	m	struct:Order	typeref:typename:uint64
+Value	appendix/trade.go	/^	Value           uint64    `db:"value"`$/;"	m	struct:models.Trade	typeref:typename:uint64
+WITHDRAWAL	appendix/balance.proto	/^  WITHDRAWAL = 2;$/;"	e
+WithdrawalData	appendix/balance.proto	/^message WithdrawalData {$/;"	m
+\\@startsection{subsection}{2} {\\fivecharsapprox\\bfseries} {-1em \\@plus -1ex \\@minus -.2ex} {1em \\@plus .2ex} {\\raggedright\\hyphenpenalty=10000\\normalfont\\normalsize}	preamble.tex	/^\\renewcommand\\subsection{%$/;"	u	section:\\clearpage\\@startsection {section}{1} {\\fivecharsapprox} {-1em \\@plus -1ex \\@minus -.2ex} {1em \\@plus .2ex} {\\raggedright\\hyphenpenalty=10000\\normalfont\\bfseries\\MakeUppercase}
+\\@startsection{subsection}{2} {\\fivecharsapprox} {-1em \\@plus -1ex \\@minus -.2ex} {1em \\@plus .2ex} {\\raggedright\\hyphenpenalty=10000\\normalfont\\normalsize\\bfseries}	preamble.tex	/^\\renewcommand\\subsection{%$/;"	u	section:\\clearpage\\@startsection {section}{1} {\\fivecharsapprox} {-1em \\@plus -1ex \\@minus -.2ex} {1em \\@plus .2ex} {\\raggedright\\hyphenpenalty=10000\\normalfont\\bfseries\\MakeUppercase}
+\\@startsection{subsubsection}{3} {\\fivecharsapprox\\bfseries} {-1em \\@plus -1ex \\@minus -.2ex} {\\z@} {\\raggedright\\hyphenpenalty=10000\\normalfont\\normalsize}	preamble.tex	/^\\renewcommand\\subsubsection{$/;"	b	subsection:\\clearpage\\@startsection {section}{1} {\\fivecharsapprox} {-1em \\@plus -1ex \\@minus -.2ex} {1em \\@plus .2ex} {\\raggedright\\hyphenpenalty=10000\\normalfont\\bfseries\\MakeUppercase}""\\@startsection{subsection}{2} {\\fivecharsapprox} {-1em \\@plus -1ex \\@minus -.2ex} {1em \\@plus .2ex} {\\raggedright\\hyphenpenalty=10000\\normalfont\\normalsize\\bfseries}
+\\clearpage\\@startsection {section}{1} {\\fivecharsapprox} {-1em \\@plus -1ex \\@minus -.2ex} {1em \\@plus .2ex} {\\raggedright\\hyphenpenalty=10000\\normalfont\\bfseries\\MakeUppercase}	preamble.tex	/^\\renewcommand\\section{%$/;"	s
+actionsHistory	appendix/cache.go	/^	actionsHistory map[int64][]NumberedAction$/;"	m	struct:Cache	typeref:typename:map[int64][]NumberedAction
+analogue_1	bibliography_database.bib	/^@Misc{analogue_1,$/;"	n
+analogue_2	bibliography_database.bib	/^@Misc{analogue_2,$/;"	n
+analogue_3	bibliography_database.bib	/^@Misc{analogue_3,$/;"	n
+application_architecture_guide	bibliography_database.bib	/^@Book{application_architecture_guide,$/;"	b
+architecture_volosevich	bibliography_database.bib	/^@Book{architecture_volosevich,$/;"	b
+balances	appendix/cache.go	/^	balances map[int64]models.Balance$/;"	m	struct:Cache	typeref:typename:map[int64]models.Balance
+belstat_average_wage	bibliography_database.bib	/^@Misc{belstat_average_wage,$/;"	n
+buyComparator	appendix/comparator.go	/^func buyComparator(a, b interface{}) int {$/;"	f	package:matching	typeref:typename:int
+clickhouse	bibliography_database.bib	/^@Misc{clickhouse,$/;"	n
+codd	bibliography_database.bib	/^@Article{codd,$/;"	a
+code_complete	bibliography_database.bib	/^@Book{code_complete,$/;"	b
+color	appendix/protobuf.proto	/^  optional string color = 3;$/;"	f
+domanov	bibliography_database.bib	/^@Book{domanov,$/;"	b
+doxygen	bibliography_database.bib	/^@Misc{doxygen,$/;"	n
+driverLicense	appendix/protobuf.proto	/^    required int64 driverLicense = 3;$/;"	f
+enumPtr	appendix/doxygen.cpp	/^    } * enumPtr, \/**< enum pointer. Details. *\/$/;"	m	class:Javadoc_Test	typeref:enum:Javadoc_Test::TEnum *	file:
+enumVar	appendix/doxygen.cpp	/^        enumVar; \/**< enum variable. Details. *\/$/;"	m	class:Javadoc_Test	typeref:enum:Javadoc_Test::TEnum *	file:
+failMutex	appendix/itester.go	/^	failMutex sync.Mutex$/;"	m	struct:Tester	typeref:typename:sync.Mutex
+fig:general_scheme	sections/04_development.tex	/^    \\caption{Схема взаимодействия сервисов}\\label{fig:general_schem/;"	l
+fig:itestlog	sections/05_testing.tex	/^    \\caption{Результаты интеграционного тестирования}\\lab/;"	l
+fig:matching_service	sections/04_development.tex	/^    \\caption{Схема работы сервиса матчинга}\\label{fig:matching_servi/;"	l
+fig:testsresult	sections/05_testing.tex	/^    \\caption{Результаты юнит-тестирования}\\label{fig:testsresult}$/;"	l
+fig:unit_test	sections/05_testing.tex	/^    \\caption{Юнит-тест для матчинга}\\label{fig:unit_test}$/;"	l
+fig:unit_test2	sections/05_testing.tex	/^    \\caption{Юнит-тест нескольких ордеров для матчинга}\\la/;"	l
+finishMutex	appendix/itester.go	/^	finishMutex sync.Mutex$/;"	m	struct:Tester	typeref:typename:sync.Mutex
+gluhova	bibliography_database.bib	/^@Book{gluhova,$/;"	b
+gnu_cli	bibliography_database.bib	/^@Misc{gnu_cli,$/;"	n
+golang	bibliography_database.bib	/^@Misc{golang,$/;"	n
+gost_19	bibliography_database.bib	/^@Book{gost_19.701,$/;"	b
+gost_7	bibliography_database.bib	/^@Book{gost_7.0,$/;"	b
+grpc	bibliography_database.bib	/^@Misc{grpc,$/;"	n
+habr_crossplatform	bibliography_database.bib	/^@Misc{habr_crossplatform,$/;"	n
+habr_db_tutorial	bibliography_database.bib	/^@Misc{habr_db_tutorial,$/;"	n
+habr_soa	bibliography_database.bib	/^@Misc{habr_soa,$/;"	n
+handler	appendix/doxygen.cpp	/^    int (*handler)(int a, int b);$/;"	m	class:Javadoc_Test	typeref:typename:int (*)(int a,int b)	file:
+hatchback	appendix/protobuf.proto	/^    hatchback = 1;$/;"	e
+idCounter	appendix/cache.go	/^	idCounter map[int64]uint64$/;"	m	struct:Cache	typeref:typename:map[int64]uint64
+introduction_to_architecture	bibliography_database.bib	/^@InBook{introduction_to_architecture,$/;"	i
+isFailed	appendix/itester.go	/^	isFailed  bool$/;"	m	struct:Tester	typeref:typename:bool
+isFinished	appendix/itester.go	/^	isFinished  bool$/;"	m	struct:Tester	typeref:typename:bool
+iso_iec_it_vocabulary	bibliography_database.bib	/^@Misc{iso_iec_it_vocabulary,$/;"	n
+istqb_specification	bibliography_database.bib	/^@Misc{istqb_specification,$/;"	n
+jwt	bibliography_database.bib	/^@Book{jwt,$/;"	b
+kulikov	bibliography_database.bib	/^@Book{kulikov,$/;"	b
+kulikov_db_workbook	bibliography_database.bib	/^@Book{kulikov_db_workbook,$/;"	b
+labour_calendar	bibliography_database.bib	/^@Misc{labour_calendar,$/;"	n
+lastName	appendix/protobuf.proto	/^    required string lastName = 2; $/;"	f
+limit_order	bibliography_database.bib	/^@Misc{limit_order,$/;"	n
+log15	bibliography_database.bib	/^@Misc{log15,$/;"	n
+log_lib	bibliography_database.bib	/^@Misc{log_lib,$/;"	n
+matching	appendix/comparator.go	/^package matching$/;"	p
+model	appendix/protobuf.proto	/^  required string model = 1;$/;"	f
+models	appendix/trade.go	/^package models$/;"	p
+mongo	bibliography_database.bib	/^@Misc{mongo,$/;"	n
+name	appendix/protobuf.proto	/^    required string name = 1;$/;"	f
+orders	appendix/container.go	/^	orders map[int64]models.Order$/;"	m	struct:OrderContainer	typeref:typename:map[int64]models.Order
+palitsyn	bibliography_database.bib	/^@Book{palitsyn,$/;"	b
+patterns	bibliography_database.bib	/^@Book{patterns,$/;"	b
+pflag	bibliography_database.bib	/^@Misc{pflag,$/;"	n
+practical_tutorial_sql	bibliography_database.bib	/^@Book{practical_tutorial_sql,$/;"	b
+previousOwner	appendix/protobuf.proto	/^  repeated Owner previousOwner = 5;$/;"	f
+priceSet	appendix/container.go	/^	priceSet *treeset.Set$/;"	m	struct:OrderContainer	typeref:typename:*treeset.Set
+prices	appendix/container.go	/^	prices map[uint64][]int64$/;"	m	struct:OrderContainer	typeref:typename:map[uint64][]int64
+protobuf	bibliography_database.bib	/^@Misc{protobuf,$/;"	n
+publicVar	appendix/doxygen.cpp	/^    int publicVar;$/;"	m	class:Javadoc_Test	typeref:typename:int	file:
+rabbitmq	bibliography_database.bib	/^@Misc{rabbitmq,$/;"	n
+redis	bibliography_database.bib	/^@Misc{redis,$/;"	n
+s:l	Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 21) \/ 43)$/;"	v
+s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+sec:analysis	sections/01_analysis.tex	/^\\section{Обзор предметной области}\\label{sec:analysis}$/;"	l
+sec:analysis:analogues	sections/01_02_analogues.tex	/^\\subsection{Обзор существующих аналогов}\\label{sec:analysis:analogues/;"	l
+sec:analysis:specification	sections/01_03_specification.tex	/^\\subsection{Требования к проектируемому программному сре/;"	l
+sec:analysis:task	sections/01_01_task.tex	/^\\subsection{Постановка задачи}\\label{sec:analysis:task}$/;"	l
+sec:definitions	sections/00_introduction.tex	/^\\sectioncentered*{Определения и сокращения}\\label{sec:definitions}$/;"	l
+sec:development	sections/04_development.tex	/^\\section{Разработка программного средства}\\label{sec:development/;"	l
+sec:domain	sections/02_domain.tex	/^\\section{Моделирование предметной области}\\label{sec:domain}$/;"	l
+sec:domain:service	sections/02_domain.tex	/^\\subsection{Описание сервисов программного продукта}\\label/;"	l
+sec:economics	sections/07_economics.tex	/^\\section{Технико-экономическое обоснование разработки /;"	l
+sec:introduction	sections/00_introduction.tex	/^\\addcontentsline{toc}{section}{Введение}\\label{sec:introduction}$/;"	l
+sec:manual	sections/06_manual.tex	/^\\section{Руководство по установке и использованию}\\label{s/;"	l
+sec:testing	sections/05_testing.tex	/^\\section{Тестирование}\\label{sec:testing}$/;"	l
+sec:tools	sections/03_tools.tex	/^\\section{Используемые инструменты и технологии}\\label{sec:to/;"	l
+sedan	appendix/protobuf.proto	/^    sedan = 0;$/;"	e
+sellComparator	appendix/comparator.go	/^func sellComparator(a, b interface{}) int {$/;"	f	package:matching	typeref:typename:int
+tests	appendix/itestex.go	/^var tests map[string]func(*Tester) = map[string]func(*Tester){$/;"	v	typeref:typename:map[string]func(*Tester)
+type	appendix/protobuf.proto	/^  required BodyType type = 2 [default = sedan];$/;"	f
+viper	bibliography_database.bib	/^@Misc{viper,$/;"	n
+wiki_codd	bibliography_database.bib	/^@Misc{wiki_codd,$/;"	n
+wiki_exchange	bibliography_database.bib	/^@Misc{wiki_exchange,$/;"	n
+wiki_mine	bibliography_database.bib	/^@Misc{wiki_mine,$/;"	n
+wiki_soa	bibliography_database.bib	/^@Misc{wiki_soa,$/;"	n
+year	appendix/protobuf.proto	/^  required int32 year = 4;$/;"	f
+Интеграционное тестирование	sections/05_testing.tex	/^\\subsection{Интеграционное тестирование}$/;"	u	section:Тестирование
+Используемые инструменты и технологии	sections/03_tools.tex	/^\\section{Используемые инструменты и технологии}\\label{sec:to/;"	s
+Краткая характеристика программного продукта	sections/07_economics.tex	/^\\subsection{Краткая характеристика программного продукт/;"	u	section:Технико-экономическое обоснование разработки программного средства обработки данных валютной биржи
+Моделирование предметной области	sections/02_domain.tex	/^\\section{Моделирование предметной области}\\label{sec:domain}$/;"	s
+Обзор предметной области	sections/01_analysis.tex	/^\\section{Обзор предметной области}\\label{sec:analysis}$/;"	s
+Обзор существующих аналогов	sections/01_02_analogues.tex	/^\\subsection{Обзор существующих аналогов}\\label{sec:analysis:analogues/;"	u	section:Моделирование предметной области
+Общая схема взаимодействия сервисов	sections/04_development.tex	/^\\subsection{Общая схема взаимодействия сервисов}$/;"	u	section:Разработка программного средства
+Описание сервисов программного продукта	sections/02_domain.tex	/^\\subsection{Описание сервисов программного продукта}\\label/;"	u	section:Моделирование предметной области
+Постановка задачи	sections/01_01_task.tex	/^\\subsection{Постановка задачи}\\label{sec:analysis:task}$/;"	u	section:Технико-экономическое обоснование разработки программного средства обработки данных валютной биржи
+Разработка программного средства	sections/04_development.tex	/^\\section{Разработка программного средства}\\label{sec:development/;"	s
+Расчёт затрат на разработку ПО	sections/07_economics.tex	/^\\subsection{Расчёт затрат на разработку ПО}$/;"	u	section:Технико-экономическое обоснование разработки программного средства обработки данных валютной биржи
+Руководство по установке и использованию	sections/06_manual.tex	/^\\section{Руководство по установке и использованию}\\label{s/;"	s
+Сервис матчинг	sections/04_development.tex	/^\\subsection{Сервис матчинг}$/;"	u	section:Разработка программного средства
+Сервис матчинга	sections/06_manual.tex	/^\\subsection{Сервис матчинга}$/;"	u	section:Руководство по установке и использованию
+Тестирование	sections/05_testing.tex	/^\\section{Тестирование}\\label{sec:testing}$/;"	s
+Технико-экономическое обоснование разработки программного средства обработки данных валютной биржи	sections/07_economics.tex	/^\\section{Технико-экономическое обоснование разработки /;"	s
+Требования к проектируемому программному средству	sections/01_03_specification.tex	/^\\subsection{Требования к проектируемому программному сре/;"	u	section:Моделирование предметной области
+Юнит-тестирование	sections/05_testing.tex	/^\\subsection{Юнит-тестирование}$/;"	u	section:Тестирование

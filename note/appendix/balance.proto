@@ -1,0 +1,38 @@
+enum BalanceAction {
+  UNKNOWN = 0;
+  DEPOSIT = 1;
+  WITHDRAWAL = 2;
+  FREEZING = 3;
+  UNFREEZING = 4;
+  TRANSFER = 5;
+}
+
+message DepositData {
+  int64 UserID = 1;
+  uint64 Value = 2;
+}
+
+message UnfreezingData {
+  int64 UserID = 1;
+  uint64 Value = 2;
+}
+
+message FreezingData {
+  int64 UserID = 1;
+  uint64 FreezeValue = 2;
+  uint64 Value = 3;
+  uint64 Price = 4;
+  bool IsPurchase = 5;
+}
+
+message WithdrawalData {
+  int64 UserID = 1;
+  uint64 Value = 2;
+  bool fromFrozen = 3;
+}
+
+message TransferData {
+  int64 FromID = 1;
+  int64 ToID = 2;
+  uint64 Value = 3;
+}

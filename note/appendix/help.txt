@@ -1,0 +1,18 @@
+Hello, I am Exchange Matching Engine!
+Usage of ./main:
+      --balance.first string        RabbitMQ queue for first balance server (default "usd-balance")
+      --balance.second string       RabbitMQ queue for second balance server (default "btc-balance")
+      --clickhouse.connect string   Connection url to clickhouse(like "tcp://address:port?database=dname&username=uname&password=password") (default "tcp://localhost:9000?database=default&username=default&password=")
+      --clickhouse.table string     Name of table in database (default "trades")
+      --config-file string          Path to config file
+      --logger.file string          Path to file with error log (default "errors.log")
+      --logger.level string         Logger level. Options: "debug", "info", "warn", "error", "crit" (default "warn")
+      --mongo.connect string        Connection url to mongodb(like "mongodb://ip_address:port/collection_name") (default "mongodb://localhost:27017/test?maxidletimems=100000000000")
+      --mongo.table string          Name of collection in database (default "orders")
+      --name-of-node string         Name of node (default "USD/BTC")
+      --rabbitmq.address string     RabbitMQ address (default "amqp://localhost:5672")
+      --rabbitmq.queue string       RabbitMQ queue name (default "hello")
+      --redis-address string        Address of redis server (default "localhost:6379")
+      --rpc.address string          RPC address: "host:port" (default "0.0.0.0:13131")
+      --rpc.protocol string         RPC protocol. Options: "tcp", "tcp4", "tcp6", "unix", "unixpacket" (default "tcp")
+pflag: help requested
