@@ -1,0 +1,15 @@
+#header {
+    background: white;
+}
+
+#header .error {
+    color: red;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header a:hover {
+    text-decoration: underline;
+}
