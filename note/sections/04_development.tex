@@ -86,7 +86,7 @@
 \begin{itemize}
     \item developed employees controller - используется для работы с информацией о сотруднике;
     \item skills controller - используется для работы с информацией о технологиях в компании;
-    \item assessments controller - используется для информации о мини-экзаменах между сотрудниками.
+    \item assessments controller - используется для информации о мини-экза\-менах между сотрудниками.
 \end{itemize}
 
 \bigskip
@@ -149,6 +149,14 @@
     \item использовать язык разметки, который существует также для других платформ.
 \end{itemize}
 
+Формирование и отправка уведомления происходит следующим образом:
+\begin{itemize}
+    \item сервис получает из очереди сообщений информацию о новом уведомлении;
+    \item из базы данных загружается шаблон уведомления;
+    \item сервис при помощи DotLiquid заполняет данные в шаблоне;
+    \item сервис отправляет сформированное уведомление по адресу, полученному из сообщения.
+\end{itemize}
+
 \bigskip
 \textbf{Сервис авторизации}
 
@@ -194,10 +202,10 @@ LIHjWCBORSWMEibq-tnT8ue\_deUqZx1K0XxCOXZRrBI
 
 \begin{itemize}
     \item \lstinline{GetTokensByCredentials(login string, password string) : TokenPair, error} — аутентификация существующего пользователя по логину и паролю. Данная операция возвращает пару access и refresh токенов;
-    \item \lstinline{GetTokensByRefreshToken(refresh_token string) : TokenPair, error} — аутентификация существующего пользователя по refresh токену. Данная операция возвращает пару access и refresh токенов.
+    \item \lstinline{GetTokensByRefreshToken(refresh_token string) : TokenPair, error} — ау\-тентификация существующего пользователя по refresh токену. Данная операция возвращает пару access и refresh токенов.
 \end{itemize}
 
-Авторизационный сервис поддерживает только схему авторизации ''Resource Owner Password Credential''. Для её работы определены следующие сущности:
+В сервисе определены следующие сущности:
 
 \begin{itemize}
     \item Клиент.
