@@ -287,6 +287,46 @@ LIHjWCBORSWMEibq-tnT8ue\_deUqZx1K0XxCOXZRrBI
 
 Файл «router.js» отвечает за сопоставление URL к компонентам, которые должны будут использоваться. Одним из основных принципов работы этого модуля является тот факт, что компоненты могут вкладываться друг в друга с помощью тега «router-view» внутри template. Файл включает в себя проверки авторизационных политик, которые определяют ограничения на доступ к компонентам в зависимости от статуса пользователя.
 
+К примеру, авторизационная политика, которая выглядят следующим образом:
+
+\begin{lstlisting}[language=javascript]
+const anonymousRequirement = {
+    check: function (params) { return checkIfAnonymous() },
+    callback: function (next) { redirectToHub(next) }
+}
+
+const checkIfAnonymous = () => {
+    return !authHelper.common.isAuthorized()
+}
+
+const redirectToHub = (next) => {
+  next({ name: routerHelper.MyLovelyProgressHub })
+}
+\end{lstlisting}
+
+Перенаправляет авторизованного пользователя на главную страницу клиентского приложения.
+
+Некоторые компоненты используют сразу несколько авторизационных политик. Например, для доступа к компоненту, который опрелён следующим образом:
+
+\begin{lstlisting}[language=javascript]
+{
+    path: 'organizations/:organizationId/skills/:skillId/update',
+    component: UpdateSkill,
+    name: routerHelper.UpdateSkill,
+    props: true,
+    meta: {
+        authRequirements: [
+          authorizedRequirement,
+          sameOrganizationRequirement,
+          organizationOwnerRequirement,
+        ]
+    },
+    beforeEnter: checkAuthPolicies
+}
+\end{lstlisting}
+
+Пользователь одновременно должен быть авторизован, состоять в организации с тем же идентификатором, что указан в URL, а также быть владельцем этой организации.
+
 Создается один общий компонент – MainLayout, содержащий базовую общую разметку сайта. В зависимости от содержимого URL, в router-view данного компонента будут попадать разные страницы. Они также могут иметь собственные router-view в зависимости от содержимого URL.
 
 Самые сложные компоненты приложения располагаются в папке «views» (рисунок~\ref{fig:app_view}). Они все имеют сложную разметку, часто применяют внутри себя множество других компонентов, используют уникальные стили, правила валидации и т.д. Большинство данных компонентов служат страницей, на которую ведет URL, однако есть и исключения.

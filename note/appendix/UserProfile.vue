@@ -348,18 +348,9 @@ export default {
               data.genderExternalId == null
                 ? null
                 : api.files.get.genderUrl(data.genderExternalId),
-            projectAssignments: [
-              {
-                projectName: "MLP_1",
-                projectRoles: [],
-              },
-              {
-                projectName: "MLP_2",
-                projectRoles: [],
-              },
-            ],
+            projectAssignments: data.projectAssignments,
           },
-          projectsCount: 5,
+          projectsCount: data.projectsCount,
         };
       } catch (e) {
         if (e.response.status === 403) {
