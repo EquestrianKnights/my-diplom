@@ -7,6 +7,10 @@
 % Зачем: включить в список литературы все источники из базы (даже если на них нет ссылок в тексте).
 % \nocite{*}
 
+\makeatletter
+\renewcommand\@biblabel[1]{#1}
+\makeatother
+
 % Зачем: Печать списка литературы. База данных литературы - файл bibliography_database.bib
 \bibliography{bibliography_database}
 
